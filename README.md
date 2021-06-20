@@ -11,7 +11,17 @@ Secondly, it helps to provide driver with custrom autonomous driving AI. What if
 Finally, drivers can choose the vehicle that perfectly matches themselves. When buying a new car, people used to mostly consider their financial conditions. However, nowadays they more consider confortness and diverse experience that the car provides. It will be helpful to choose the right car, if it is possible to evaluate the driver's drving skills.
 
 
-## Problem Formulation
+## Problem Formulation and Data
+
+![image](https://user-images.githubusercontent.com/82494923/122663622-f8a98d80-d1d6-11eb-9452-adcf1accfeff.png)
+![image](https://user-images.githubusercontent.com/82494923/122663623-019a5f00-d1d7-11eb-9e31-c07042d655b7.png)
+![image](https://user-images.githubusercontent.com/82494923/122663636-12e36b80-d1d7-11eb-859a-9fed1929e5de.png)
+
+1. Used the software named "Assetto Corsa" to get all the data. Although it is known as driving game, it provides over 160 features of car condition. 
+2. Used Logitech G27 Steering Wheel, Accelerator and Brake.
+3. Chose ks_highlands track, which is composed of gentle curves.
+4. Chose Pagani Zonda R as a vehicle.
+
 
 
 Write a Description
