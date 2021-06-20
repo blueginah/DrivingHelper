@@ -93,19 +93,17 @@ The performance of the SVM was way better than LSTM and GRU. We analyzed the rea
 2. Develop another model which utilizes not only numeric sensor data but also image sensor data.
 3. Improve accuracy of classification and accelerate the code in order to provide the driver with recommendations in real time.
 
-Write a Description
-        What your application does,
-        Why you used the technologies you used,
-        Some of the challenges you faced and features you hope to implement in the future.
-Add a Table of Contents (Optional)        
-How to Install Your Project
-How to Use Your Project
-Include Credits
-List the License
 
 
+## Code Description
+### implementSVM
+Modules : pandas, matplolib, numpy, sklearn, boruta
+Functions : 
+1. Generate_data
+2. Load_data, 
+3. Processing_data,
+4. Evaluate_model, 
+5. Confusion_matrix
+### implementLSTMandGRU
+### implementGRU_torch
 
-Why did you build this project?
-What problem does it solve?
-What did you learn?
-What makes your project stand out? If your project has a lot of features, consider adding a "Features" section and listing them here.
