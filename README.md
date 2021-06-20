@@ -99,7 +99,7 @@ The performance of the SVM was way better than LSTM and GRU. We analyzed the rea
 ### implementSVM
 Modules : pandas, matplolib, numpy, sklearn, boruta
 
-Functions 
+Functions :
 1. Generate_data : devide raw data with many laps into data with single lap and extract curve data only
 2. Load_data : load generated data
 3. Processing_data : normalize data using standard scaler
@@ -111,6 +111,15 @@ Functions
 9. finding_hyperparameter : get proper hyper-parameters
 
 ### implementLSTMandGRU
-Modules : pandas, matplolib, numpy, sklearn, boruta
+Modules : pandas, matplolib, numpy, tensorflow, sklearn
+
+Flow chart : 
+1. Generate WHOLE corner's data : pad data into 60 rows, MinMax scaler, randomize sequence of sample data
+2. Generate one corner's data : pad data into 60 rows, MinMax scaler, randomize sequence of sample data
+3. load data : load train, validation, test data and their targer data.
+4. Making model : option1(LSTM), option2(GRU), ADAM optimizer
+5. Training model : lr = 0.0001
+6. Load and evaluate model : accuracy
+7. 
 ### implementGRU_torch
 
