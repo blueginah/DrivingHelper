@@ -87,6 +87,12 @@ The performance of the SVM was way better than LSTM and GRU. We analyzed the rea
 2. While the SVM treats each time step in time-series data as a single sample data, LSTM and GRU treat whole time-series data of single lap as a single data. So, the number of sample data of SVM is way larger. Thousands of sample data for SVM while 38 sample data for LSTM and GRU. In order to overcome the lack of data, we tried to augment data using interpolation. However it concluded in failure because newly augmented data has too similiar to the original that the model is overfitted.
 3. Becuase of the unique features of drving data, it inevitable to have unsmooth data. It is expected to deteriorate the performance of LSTM and GRU which rely on smoothness of the data.
 
+
+### Future Works
+1. Gather more data from more drivers.
+2. Develop another model which utilizes not only numeric sensor data but also image sensor data.
+3. Improve accuracy of classification and accelerate the code in order to provide the driver with recommendations in real time.
+
 Write a Description
         What your application does,
         Why you used the technologies you used,
