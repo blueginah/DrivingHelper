@@ -17,12 +17,20 @@ Finally, drivers can choose the vehicle that perfectly matches themselves. When 
 ![image](https://user-images.githubusercontent.com/82494923/122663623-019a5f00-d1d7-11eb-9e31-c07042d655b7.png)
 ![image](https://user-images.githubusercontent.com/82494923/122663636-12e36b80-d1d7-11eb-859a-9fed1929e5de.png)
 
-1. Used the software named "Assetto Corsa" to get all the data. Although it is known as driving game, it provides over 160 features of car condition. 
+1. Used the software named "Assetto Corsa" to get all the data. Although it is known as driving game, it provides over 180 features of car condition. 
 2. Used Logitech G27 Steering Wheel, Accelerator and Brake.
 3. Chose ks_highlands track, which is composed of gentle curves.
 4. Chose Pagani Zonda R as a vehicle.
+5. Colleted data with external program called ACTI and extracted into csv file.
+
+![image](https://user-images.githubusercontent.com/82494923/122663860-8639ad00-d1d8-11eb-8918-b51b87b8db21.png)
+![image](https://user-images.githubusercontent.com/82494923/122663863-88037080-d1d8-11eb-999c-f0f5be1222b5.png)
+
+The columns are list of features of car condition, and the rows are timeseries data recored every 0.5 seconds. It is possible to control the time step.
+There are over 180 features and it looks likely to be able to specify the level of driving skill with them.
 
 
+## Methods
 
 Write a Description
         What your application does,
