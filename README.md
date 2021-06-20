@@ -98,12 +98,19 @@ The performance of the SVM was way better than LSTM and GRU. We analyzed the rea
 ## Code Description
 ### implementSVM
 Modules : pandas, matplolib, numpy, sklearn, boruta
-Functions : 
-1. Generate_data
-2. Load_data, 
-3. Processing_data,
-4. Evaluate_model, 
-5. Confusion_matrix
+
+Functions 
+1. Generate_data : devide raw data with many laps into data with single lap and extract curve data only
+2. Load_data : load generated data
+3. Processing_data : normalize data using standard scaler
+4. Evaluate_model : evaluate model with average cross-validation score
+5. Confusion_matrix : create confusion matrix which contains accuracy, precision, recall and final scores.
+6. draw_ROc : create plot of ROC curve
+7. grid_searching : grid search in order to find adequate hyper-parameters using auto tune.
+8. run_experiment : Main code
+9. finding_hyperparameter : get proper hyper-parameters
+
 ### implementLSTMandGRU
+Modules : pandas, matplolib, numpy, sklearn, boruta
 ### implementGRU_torch
 
