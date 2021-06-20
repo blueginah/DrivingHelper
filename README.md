@@ -59,6 +59,13 @@ Finally, we used GRU to create the classification model taking time-series data 
 
 
 
+## Preliminary Results
+### SVM
+![image](https://user-images.githubusercontent.com/82494923/122665338-9bffa000-d1e1-11eb-86b6-48145bfc3fa8.png)
+![image](https://user-images.githubusercontent.com/82494923/122665373-c5b8c700-d1e1-11eb-9d06-14a73815ed55.png)
+
+
+From the table, all results are over 90% and it is easy to conclude that the trained classification model is reasonable. The average cross-validation score of all features is higher than selected features. Regardless of the number of curves and type of curve, it showed robush results. Furthermoe, ROC(Receiver Operating Characteristic) curve is used to evaluate the performance and convergence of the machine learning model and it is desirable when the blue curve is goes near to left top corner of the graph. Above ROC curver shows that the trained model has great performance. Morover, Toe in of front tyres came out to be the most significant factor that attributes to create classification model. It is reasonable because Toe in of front tyres is known as indicator of stability while driving of the curve.
 
 Write a Description
         What your application does,
