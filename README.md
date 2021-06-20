@@ -3,6 +3,7 @@
 Classifying high-skilled drivers and low-skilled drivers using data extracted from Assetto-Corsa
 
 ## Motivaiton & Social Applications
+![image](https://user-images.githubusercontent.com/82494923/122663979-6b1b6d00-d1d9-11eb-96da-f07ebead6209.png)
 
 Firstly, it helps to prevent car accidents. Researchers are trying hard to develop full autonomous driving AI, which does not require drivers' attention, still has a long way to it. Current autonomous driving AI requires drivers' full attention and it just assists drivers. However, if the driving skill of assistance system and that of drivers have a great difference? There is possible danger of accident if the driver does no manage to handle the vehicle. Thus, it is essential to evaluate the driving skill of the driver and provide them with adequate level of driving assistance system. 
 
@@ -26,12 +27,26 @@ Finally, drivers can choose the vehicle that perfectly matches themselves. When 
 ![image](https://user-images.githubusercontent.com/82494923/122663860-8639ad00-d1d8-11eb-8918-b51b87b8db21.png)
 ![image](https://user-images.githubusercontent.com/82494923/122663863-88037080-d1d8-11eb-999c-f0f5be1222b5.png)
 
-The columns are list of features of car condition, and the rows are timeseries data recored every 0.5 seconds. It is possible to control the time step.
+The columns are list of features of car condition, and the rows are timeseries data recorded every 0.5 seconds. It is possible to control the time step.
 There are over 180 features and it looks likely to be able to specify the level of driving skill with them.
 
 
 ## Methods
+### Pre-processing Data
+![image](https://user-images.githubusercontent.com/82494923/122664009-969e5780-d1d9-11eb-892e-d4fe17ceb36d.png)
 
+1. All Features
+2. Selected Features
+
+At first, we used data with all features. As we are not expert in cars, we are no sure which feature plays a key role in classifying the level of drivers. So, we used whole bunch of data at once.
+Secondly, we used data with selected features. Features, which the program provide with, includes lots of features that is from speicial sensors which professional drivers use. 
+So we used selected feature. They are composed of features that can easily get from general sensors which normal drivers can access. Such as, GPS, Accelerometer, Ground speed etc.
+
+### Problem Solving Methods
+
+1. SVM (Support Vector Machine)
+2. LSTM (Long Short-Term Memory)
+3. GRU (Gated Recurrent Units)
 Write a Description
         What your application does,
         Why you used the technologies you used,
