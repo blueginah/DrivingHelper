@@ -1,31 +1,3 @@
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#problemformulation">Problem Formulation and Motivation</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 # About The Project
@@ -156,9 +128,20 @@ Other ".ipynb" files are implementation of SVM, LSTM, GRU and preliminary experi
     Getting experts and beginners data from processedData directory, and after converting them into dataframe format, scaled them using MinMaxScaler and appended them to sequences list, which is a unit of LSTM and GRU's sequences. 
     Then, padding them according to the last row of max length data and truncate their length into 60. Then put them into train and test dataset.
 
-    2) Select some features that we want to plot in featureList and then plot them using matplotlib.
+    2) generate_onecorner_sequences():
+    Process data according to each corners, same as generate_allcorner_data()
 
-    3) Using curve_num variable, we can select mode whether to specify a certain curve number or plotting the entire curve data.
+    3) load_data:
+    Split data into trainset, validationset and targetset.
+    
+    4) model_making:
+    Making LSTM and GRU model using keras by adding LSTM and Dropout layers, using sigmoid activation function.
+    
+    5) Learning:
+    Using ADAM optimizer and binary crossentropy loss function, fitting model.
+    
+    6) loadmodel and evaluate:
+    Loading models that are saved in early checkpoints and after compilling them, evaluate using test set. Also, plotting the result. 
 
 ### * implementSVM.ipynb
 
@@ -224,12 +207,19 @@ GRU was also dependent to the consistency of curve data, which means it showed v
 # Discussion for the Results
 ## Why did SVM outperform LSTM or GRU?
 
+    1) Since it was Binary Classification with lots of features, it was more advantageous for SVM 
 
+    2) SVM makes decision based on average features but LSTM makes decision based on previous timestamp data
+
+    3) Because of the unique features of driving data, beginners’ driving wasn’t smooth as experts so that  there was less correlation compared to general time series data
+    
+    4) For same amount of data, LSTM and GRU considers whole time step data as one single data, but SVM considers each as different data so the total amount of data was larger in SVM compared to other models.
 
 # Future Works
 1. Gathering more data from people having various driving skills so that our model can classify data into more specific levels
 
 2. Develop other classification models using image and sensor data together
+
 3. Improve Accuracy of Classifications in real time when playing game so that it appropriately recommends directions to users.
 
 <!-- CONTRIBUTING -->
@@ -246,22 +236,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 # Contact
 
-Your Name - (https://blueginah97@gmail.com) - email
+HwangGiyoung - (https://blueginah97@gmail.com) - email
 
 Project Link: [https://github.com/blueginah/DrivingHelper](https://github.com/blueginah/DrivingHelper)
 
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
