@@ -1,6 +1,6 @@
 
 <!-- ABOUT THE PROJECT -->
-# About The Project
+# Development of AI model for Racing Driving Level Classification
 
 This is a project to classify high-skilled drivers and low-skilled drivers using data extracted from a steam game named Assetto-Corsa
 
