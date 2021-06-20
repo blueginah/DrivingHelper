@@ -7,8 +7,6 @@ This is a project to classify high-skilled drivers and low-skilled drivers using
 <!-- GETTING STARTED -->
 # Getting Started
 
-To get a local copy up and running follow these simple steps.
-
 ## Prerequisites and Usage
 
 1. Clone the repo
