@@ -136,3 +136,9 @@ Flow chart :
 
 
 
+## Reference
+
+1. Naiwala P. Chandrasiri, Kazunary Nawa, Akira Ishii, 2016, “Driving skill classification curve driving scenes using machine learning”
+2. Shuguang LI, Shigeyuki YAMABE, Yoichi SATO, Takayuki HIRASAWA, Yoshihiro SUDA, Naiwala P. CHANDRASIRI and Kazunari NAWA, 2013, “Driving Feature Extraction from High and Low Skilled Drivers in CURVE Sections Based on Machine Learning”
+3. Shuguang LI, Shigeyuki YAMABE, Yoichi SATO, Yoshihiro SUDA, Naiwala P. CHANDRASIRI and Kazunari NAWA, 2014, “Learning Characteristic Driving Operations in Curve Sections that Reflect Drivers’ Skill Levels” 
+
