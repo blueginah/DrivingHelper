@@ -38,7 +38,8 @@ There are over 180 features and it looks likely to be able to specify the level 
 1. All Features
 2. Selected Features
 
-At first, we used data with all features. As we are not expert in cars, we are no sure which feature plays a key role in classifying the level of drivers. So, we used whole bunch of data at once.
+Firstly, we used data with all features. As we are not expert in cars, we are no sure which feature plays a key role in classifying the level of drivers. So, we used whole bunch of data at once.
+
 Secondly, we used data with selected features. Features, which the program provide with, includes lots of features that is from speicial sensors which professional drivers use. 
 So we used selected feature. They are composed of features that can easily get from general sensors which normal drivers can access. Such as, GPS, Accelerometer, Ground speed etc.
 
@@ -47,6 +48,8 @@ So we used selected feature. They are composed of features that can easily get f
 1. SVM (Support Vector Machine)
 2. LSTM (Long Short-Term Memory)
 3. GRU (Gated Recurrent Units)
+
+Fistly, we used SVM to create the classifivation model. SVM is a machine learning model which provides powerful classification. When the data and the labels of the data are given, SVM algoritem creates a model that judges where the new data belong to. It is intuitive if the data is simple and requires linear model. However, if there are lots of lables or features, it require additional technique, such as non-linear modeling and PCA(Principal Component Analysis). PCA is a dimensionality-reduction mehod used to minimize the the dimesion of the dataset. Since there are over 180 feature, it is essention to use PCA to extract major factors that help to create a classification model.
 Write a Description
         What your application does,
         Why you used the technologies you used,
