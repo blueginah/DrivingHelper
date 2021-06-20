@@ -79,6 +79,14 @@ In the case of LSTM, the performance highly depended on curves. There are total 
 In the case of GRU, like LSTM the performance highly depended on curves. There are total seven trials. Six trials from the single curve among of six surves and one trial from all curves. Only the first curve showed accuracy over 90. Whether using data with all features or selected features did not affected the results a lot.
 
 
+### Discussion
+
+The performance of the SVM was way better than LSTM and GRU. We analyzed the reason why SVM was the best.
+
+1. It is binary classification with lots of features. Thus, it is evident that SVM is more advantageous. If there are more than two lables and less features, the outcome is expected to be opposite.
+2. While the SVM treats each time step in time-series data as a single sample data, LSTM and GRU treat whole time-series data of single lap as a single data. So, the number of sample data of SVM is way larger. Thousands of sample data for SVM while 38 sample data for LSTM and GRU. In order to overcome the lack of data, we tried to augment data using interpolation. However it concluded in failure because newly augmented data has too similiar to the original that the model is overfitted.
+3. Becuase of the unique features of drving data, it inevitable to have unsmooth data. It is expected to deteriorate the performance of LSTM and GRU which rely on smoothness of the data.
+
 Write a Description
         What your application does,
         Why you used the technologies you used,
