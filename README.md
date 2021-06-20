@@ -107,19 +107,32 @@ Functions :
 5. Confusion_matrix : create confusion matrix which contains accuracy, precision, recall and final scores.
 6. draw_ROc : create plot of ROC curve
 7. grid_searching : grid search in order to find adequate hyper-parameters using auto tune.
-8. run_experiment : Main code
+8. run_experiment : Main function
 9. finding_hyperparameter : get proper hyper-parameters
 
 ### implementLSTMandGRU
 Modules : pandas, matplolib, numpy, tensorflow, sklearn
 
 Flow chart : 
-1. Generate WHOLE corner's data : pad data into 60 rows, MinMax scaler, randomize sequence of sample data
-2. Generate one corner's data : pad data into 60 rows, MinMax scaler, randomize sequence of sample data
+1. Generate WHOLE corner's data : truncate and pad data into 60 rows, MinMax scaler, randomize sequence of sample data
+2. Generate one corner's data : truncate and pad data into 60 rows, MinMax scaler, randomize sequence of sample data
 3. load data : load train, validation, test data and their targer data.
 4. Making model : option1(LSTM), option2(GRU), ADAM optimizer
-5. Training model : lr = 0.0001
+5. Training model : learning rate = 0.0001
 6. Load and evaluate model : accuracy
-7. 
-### implementGRU_torch
+
+
+### implementGRU_torch_new
+Modules : pandas, matplolib, numpy, torch(1.8.1), optuna, joblib
+
+Flow chart : 
+1. Generate corner data of beginners : devide raw data with many laps into data with single lap and extract curve data only
+2. Generate corner data of experts : devide raw data with many laps into data with single lap and extract curve data only
+3. Initialze hyper-parameters : epoch, batch, learning rate, hidden layer dimension etc.
+4. Define GRU deep learning model : built-in GRU module and layers in pytorch
+5. Date Processing : truncate and pad into 60 rows, randomize sequence
+6. Grid search using optuna module : auto-tune learning rate and hidden layer dimension
+7. Train and show results
+
+
 
