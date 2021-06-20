@@ -49,7 +49,11 @@ So we used selected feature. They are composed of features that can easily get f
 2. LSTM (Long Short-Term Memory)
 3. GRU (Gated Recurrent Units)
 
-Fistly, we used SVM to create the classifivation model. SVM is a machine learning model which provides powerful classification. When the data and the labels of the data are given, SVM algoritem creates a model that judges where the new data belong to. It is intuitive if the data is simple and requires linear model. However, if there are lots of lables or features, it require additional technique, such as non-linear modeling and PCA(Principal Component Analysis). PCA is a dimensionality-reduction mehod used to minimize the the dimesion of the dataset. Since there are over 180 feature, it is essention to use PCA to extract major factors that help to create a classification model.
+Fistly, we used SVM to create the classification model. SVM is a machine learning model which provides powerful classification. When the data and the labels of the data are given, SVM algoritem creates a model that judges where the new data belong to. It is intuitive if the data is simple and requires linear model. However, if there are lots of lables or features, it require additional technique, such as non-linear modeling and PCA(Principal Component Analysis). PCA is a dimensionality-reduction mehod used to minimize the the dimesion of the dataset. Since there are over 180 feature, it is essention to use PCA to extract major factors that help to create a classification model. However, the SVM does not handle time-series data. Each row of the time-series data is single datum.
+
+Secondly, we used LSTM to create the classification model taking time-series data into account. While the SVM is a machine learning model, LSTM is a deep learning model. There are lots of deep learning model that treats time-series data such as RNN. Many of them fail to make good model with long-term data because the significance of the former data gets smaller exponentially. However, LSTM, which Long Short-term Memory,
+
+
 Write a Description
         What your application does,
         Why you used the technologies you used,
